@@ -4,45 +4,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* loading */
-
-.loader {
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    transition: opacity 0s, visibility 0.75s;
-}
-
-.loader-hidden {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.loader::after {
-    content: "";
-    width: 30px;
-    height: 30px;
-    border: 5px solid rgba(128, 128, 128, 0.18);
-    border-top-color: black;
-    border-radius: 50%;
-    animation: loading 0.75s ease infinite;
-}
-
-@keyframes loading {
-    from{
-        transform: rotate(0turn);
-    }
-    to {
-        transform: rotate(1turn);
-    }
-}
-
 * {
     margin: 0;
     color: white;
@@ -138,11 +99,34 @@ p {
 .first__button2 {
     margin: 0.5rem 0;
     border: 0.1rem solid white;
-    width: 55%;
+    width: 50%;
     font-size: 1.3rem;
     padding: 0.5rem 1rem;
     border-radius: 1rem;
 }
+
+button {
+    font-weight: 500;
+}
+
+p {
+    font-weight: 500;
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a:focus {
+    outline: none !important;
+}
+
 
 /* .first__image {
     width: 100%;
@@ -153,9 +137,9 @@ p {
 .first__image {
     margin: 0;
     width: 100%;
-    border-radius: 50%;
+    border-radius: 20%;
     border: 0.1rem solid rgb(43, 2, 79);
-    box-shadow: 0px 0px 5rem rgb(56, 0, 94);
+    box-shadow: 0px 0px 3rem rgb(56, 0, 94);
 }
 
 /* Second */
@@ -376,4 +360,43 @@ p {
     border-radius:20%;
     border: 0.1rem solid rgb(43, 2, 79);
     box-shadow: 0px 0px 5rem rgb(56, 0, 94);
+}
+
+/* loading */
+
+.loader {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(21, 7, 38);
+    transition: opacity 0s, visibility 0.75s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 5px solid rgba(99, 23, 161, 0.18);
+    border-top-color: rgb(99, 23, 161);
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    from{
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
 }
