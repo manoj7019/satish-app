@@ -4,6 +4,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    cursor: url('./icons/hammer.png'), auto;
+}
+
 * {
     margin: 0;
     color: white;
@@ -89,7 +93,6 @@ p {
 }
 
 .first__button1 {
-    margin: 0.5rem 0;
     background-color: rgb(99, 23, 161);
     border: none;
     width: 50%;
